@@ -1,11 +1,11 @@
 import React from "react";
 import { SideNavMenuItem } from "@carbon/react";
-import styles from "./ohri-patient-chart-sidenav.scss";
+import styles from "./patient-chart-sidenav.scss";
 
-export const createOHRIPatientChartSideNavLink = (meta) => {
-  const NavItem: React.FC<{}> = (props) => {
+export const createUgandaEMRPatientChartSideNavLink = (meta) => {
+  const NavItem: React.FC = (props) => {
     return (
-      <SideNavMenuItem className={styles.ohriPatientChartSideNavItem}>
+      <SideNavMenuItem className={styles.PatientChartSideNavItem}>
         {meta.title}
       </SideNavMenuItem>
     );

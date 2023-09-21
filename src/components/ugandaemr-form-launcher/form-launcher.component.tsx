@@ -2,9 +2,9 @@ import React from "react";
 import { Add } from "@carbon/react/icons";
 import styles from "./launcher-with-intent.scss";
 import { useTranslation } from "react-i18next";
-import { OHRIOverflowMenu } from "../overflow-menu-button/ohri-overflow-menu.component";
+import { OverflowMenu } from "../overflow-menu-button/overflow-menu.component";
 
-export const OHRIFormLauncherWithIntent: React.FC<{
+export const FormLauncherWithIntent: React.FC<{
   formJson?: any;
   launchForm: (formJson?: any, intent?: string) => void;
   title?: string;
@@ -26,7 +26,7 @@ export const OHRIFormLauncherWithIntent: React.FC<{
   return (
     <div style={{ paddingTop: ".3rem" }}>
       {!hideFormLauncher && (
-        <OHRIOverflowMenu
+        <OverflowMenu
           menuTitle={
             <>
               <span className={styles.actionsButtonText}>

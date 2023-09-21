@@ -2,9 +2,8 @@ import { navigate, openmrsFetch } from "@openmrs/esm-framework";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { EmptyState } from "../empty-state/empty-state.component";
-import { OHRIFormLauncherWithIntent } from "../ohri-form-launcher/ohri-form-launcher.component";
+import { FormLauncherWithIntent } from "../ugandaemr-form-launcher/form-launcher.component";
 import styles from "./encounter-list.scss";
-import { OTable } from "../data-table/o-table.component";
 import {
   Button,
   Link,
@@ -20,12 +19,13 @@ import {
   launchFormInEditMode,
   launchFormInViewMode,
   launchFormWithCustomTitle,
-} from "../../utils/ohri-forms-commons";
+} from "../../utils/ugandaemr-forms-commons";
 import {
   getForm,
   applyFormIntent,
   updateExcludeIntentBehaviour,
 } from "@openmrs/openmrs-form-engine-lib";
+import { OTable } from "../data-table/o-table.component";
 
 export interface EncounterListColumn {
   key: string;
@@ -166,7 +166,7 @@ export const EncounterList: React.FC<EncounterListProps> = ({
   );
 
   const updateTable = (fullDataset, start, itemCount) => {
-    let currentRows = [];
+    const currentRows = [];
 
     for (let i = start; i < start + itemCount; i++) {
       if (i < fullDataset.length) {
@@ -337,7 +337,7 @@ export const EncounterList: React.FC<EncounterListProps> = ({
       });
 
       return (
-        <OHRIFormLauncherWithIntent
+        <FormLauncherWithIntent
           launchForm={launchEncounterForm}
           title={launchDisplayText}
           hideFormLauncher={launcherIsMarkedAsHidden}
@@ -349,7 +349,7 @@ export const EncounterList: React.FC<EncounterListProps> = ({
       encounterForm.availableIntents.length > 0
     ) {
       return (
-        <OHRIFormLauncherWithIntent
+        <FormLauncherWithIntent
           formJson={encounterForm}
           launchForm={launchEncounterForm}
           title={launchDisplayText}
@@ -398,7 +398,7 @@ export const EncounterList: React.FC<EncounterListProps> = ({
               pageSizes={[10, 20, 30, 40, 50]}
               totalItems={allRows.length}
               onChange={({ page, pageSize }) => {
-                let startOffset = (page - 1) * pageSize;
+                const startOffset = (page - 1) * pageSize;
                 updateTable(allRows, startOffset, pageSize);
                 setPage(page);
                 setPageSize(pageSize);

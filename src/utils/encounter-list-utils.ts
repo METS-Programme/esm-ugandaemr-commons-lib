@@ -1,8 +1,6 @@
 import moment from "moment";
-import { openmrsFetch } from "@openmrs/esm-framework";
-import { launchFormWithCustomTitle } from "./ohri-forms-commons";
 
-export function getEncounterValues(encounter, param: string, isDate?: Boolean) {
+export function getEncounterValues(encounter, param: string, isDate?: boolean) {
   if (isDate) return moment(encounter[param]).format("DD-MMM-YYYY");
   else return encounter[param] ? encounter[param] : "--";
 }
@@ -39,8 +37,8 @@ export function getObsFromEncounters(encounters, obsConcept) {
 export function getObsFromEncounter(
   encounter,
   obsConcept,
-  isDate?: Boolean,
-  isTrueFalseConcept?: Boolean
+  isDate?: boolean,
+  isTrueFalseConcept?: boolean
 ) {
   const obs = findObs(encounter, obsConcept);
 

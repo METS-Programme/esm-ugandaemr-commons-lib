@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
-import styles from "./ohri-overflow-menu.scss";
+import styles from "./overflow-menu.scss";
 import { useTranslation } from "react-i18next";
 import { applyFormIntent } from "@openmrs/openmrs-form-engine-lib";
 import { Button } from "@carbon/react";
@@ -11,7 +11,7 @@ interface OverflowMenuProps {
   formJson?: any;
 }
 
-export const OHRIOverflowMenu: React.FC<OverflowMenuProps> = ({
+export const OverflowMenu: React.FC<OverflowMenuProps> = ({
   menuTitle,
   overflowItems,
   launchForm,

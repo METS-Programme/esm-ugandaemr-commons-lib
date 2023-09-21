@@ -110,7 +110,6 @@ const Overflow: React.FC<
               <div className={styles.flexRow}>
                 <span className={styles.bannerTitle}>{meta.subTitle}</span>
               </div>
-              {/* @ts-ignore */}
               <Button size="small" kind="ghost" onClick="#">
                 Actions{" "}
                 <OverflowMenuVertical size={32} style={{ height: "20px" }} />

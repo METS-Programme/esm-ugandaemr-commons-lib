@@ -12,14 +12,14 @@ export interface WorkspaceContextProps {
   state?: any;
   mode?: SessionMode;
   screenSize?: string;
-  collapseSections?: Boolean;
+  collapseSections?: boolean;
   workspaceName?: string;
   moduleName: string;
 }
 
 let counter = 0;
 
-export const launchOHRIWorkSpace = (props: WorkspaceContextProps) => {
+export const launchugandaEMRWorkSpace = (props: WorkspaceContextProps) => {
   const workspaceName = props.workspaceName || "ohri-forms-" + counter++;
 
   const close = () => {

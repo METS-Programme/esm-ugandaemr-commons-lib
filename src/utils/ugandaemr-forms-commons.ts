@@ -1,4 +1,4 @@
-import { launchOHRIWorkSpace } from "../workspace/ohri-workspace-utils";
+import { launchugandaEMRWorkSpace } from "../workspace/workspace-utils";
 
 export const launchForm = (
   form: any,
@@ -7,7 +7,7 @@ export const launchForm = (
   title?: string,
   workspaceName?: string
 ) => {
-  launchOHRIWorkSpace({
+  launchugandaEMRWorkSpace({
     title: title || form?.name,
     screenSize: "maximized",
     mode: "enter",
@@ -25,7 +25,7 @@ export const launchFormInEditMode = (
   title?: string,
   workspaceName?: string
 ) => {
-  launchOHRIWorkSpace({
+  launchugandaEMRWorkSpace({
     title: title || form.name,
     encounterUuid: encounterUuid,
     screenSize: "maximized",
@@ -44,7 +44,7 @@ export const launchFormInViewMode = (
   title?: string,
   workspaceName?: string
 ) => {
-  launchOHRIWorkSpace({
+  launchugandaEMRWorkSpace({
     title: title || form.name,
     encounterUuid: encounterUuid,
     screenSize: "maximized",

@@ -3,8 +3,8 @@ import { SideNavLink, SideNavMenu, SideNavMenuItem } from "@carbon/react";
 import { ExtensionSlot, navigate } from "@openmrs/esm-framework";
 import styles from "./sidenav-links.scss";
 
-export const createOHRIDashboardLink = (meta) => {
-  const NavItem: React.FC<{}> = (props) => {
+export const createUgandaEMRDashboardLink = (meta) => {
+  const NavItem: React.FC = (props) => {
     const [isSelected, setIsSelected] = useState(false);
 
     const toggleHighlightedItem = useCallback((evt) => {
