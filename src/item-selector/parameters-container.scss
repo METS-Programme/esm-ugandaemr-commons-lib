@@ -1,0 +1,52 @@
+@use '@carbon/styles/scss/colors';
+@use '@carbon/styles/scss/spacing';
+@use '@carbon/styles/scss/type';
+.label {
+    margin: 0.75rem 0;
+}
+
+.panelContainer {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.paramsControlContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0.5rem;
+    >*+* {
+        margin-top: 1rem;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    max-height: 25rem;
+    overflow-y: auto;
+}
+
+.leftListItem {
+    list-style-type: none;
+    padding: 0.75rem 1rem;
+    @include type.type-style('body-compact-01');
+    &:hover {
+        background-color: colors.$gray-10-hover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &::after {
+            content: "→";
+        }
+    }
+}
+
+.rightListItem {
+    @extend .leftListItem;
+    &:hover {
+        &::after {
+            content: "←";
+        }
+    }
+}
