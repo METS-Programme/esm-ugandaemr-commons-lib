@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./parameters-container.scss";
+import styles from "./item-selector.scss";
 import Panel from "../panel/panel.component";
 import { ArrowLeft, ArrowRight } from "@carbon/react/icons";
 import { Button } from "@carbon/react";
