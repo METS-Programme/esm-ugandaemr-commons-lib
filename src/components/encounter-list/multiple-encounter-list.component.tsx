@@ -27,8 +27,8 @@ export interface MultipleEncounterListProps {
 export function getObsFromMultipleEncounters(
   encounter,
   obsConcept,
-  isDate?: Boolean,
-  isTrueFalseConcept?: Boolean,
+  isDate?: boolean,
+  isTrueFalseConcept?: boolean,
   encounterIndex?: number
 ) {
   return getObsFromEncounter(encounter, obsConcept, isDate, isTrueFalseConcept);
@@ -85,7 +85,7 @@ export const MultipleEncounterList: React.FC<MultipleEncounterListProps> = ({
           }
         });
         let baseType = null;
-        let currentArrayWeight = 0;
+        const currentArrayWeight = 0;
         Object.entries(encountersToTypeMap).forEach(([key, value]) => {
           if (value.length > currentArrayWeight) {
             baseType = key;
@@ -147,7 +147,7 @@ export const MultipleEncounterList: React.FC<MultipleEncounterListProps> = ({
   }, [baseEncounterType, encountersMap, columns]);
 
   const updateTable = (fullDataSet, start, itemCount) => {
-    let currentRows = [];
+    const currentRows = [];
 
     for (let i = start; i < start + itemCount; i++) {
       if (i < fullDataSet.length) {
@@ -180,7 +180,7 @@ export const MultipleEncounterList: React.FC<MultipleEncounterListProps> = ({
               pageSizes={[10, 20, 30, 40, 50]}
               totalItems={allRows.length}
               onChange={({ page, pageSize }) => {
-                let startOffset = (page - 1) * pageSize;
+                const startOffset = (page - 1) * pageSize;
                 updateTable(allRows, startOffset, pageSize);
                 setPage(page);
                 setPageSize(pageSize);
