@@ -25,3 +25,4 @@ export * from "./utils/encounter-list-utils";
 export * from "./types";
 export * from "./workspace/workspace-utils";
 export * from "./workspace/patient-list-workspace";
+export * from "./item-selector/item-selector.component";
