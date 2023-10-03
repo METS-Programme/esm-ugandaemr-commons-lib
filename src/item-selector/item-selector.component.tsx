@@ -4,7 +4,7 @@ import Panel from "../panel/panel.component";
 import { ArrowLeft, ArrowRight } from "@carbon/react/icons";
 import { Button } from "@carbon/react";
 
-interface ItemSelectorProps {
+export interface ItemSelectorProps {
   availableParameters: any[];
   selectedParameters: any[];
   moveFromLeftToRight: (indicator: Indicator) => void;
@@ -13,7 +13,7 @@ interface ItemSelectorProps {
   moveAllParametersRight: () => void;
 }
 
-const ItemSelector: React.FC<ItemSelectorProps> = ({
+export const ItemSelector: React.FC<ItemSelectorProps> = ({
   availableParameters,
   selectedParameters,
   moveFromLeftToRight,
@@ -78,5 +78,3 @@ const ItemSelector: React.FC<ItemSelectorProps> = ({
     </>
   );
 };
-
-export default ItemSelector;
