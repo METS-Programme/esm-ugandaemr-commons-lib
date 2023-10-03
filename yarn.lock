@@ -3879,18 +3879,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@openmrs/esm-patient-common-lib@npm:next":
   version: 5.0.1-pre.2571
   resolution: "@openmrs/esm-patient-common-lib@npm:5.0.1-pre.2571"
+=======
+"@openmrs/esm-patient-common-lib@npm:4.x":
+  version: 4.6.0
+  resolution: "@openmrs/esm-patient-common-lib@npm:4.6.0"
+>>>>>>> c7934c8a6dfe2bc6bff3c4420dad9761e52636e6
   dependencies:
     "@carbon/react": ^1.12.0
     lodash-es: ^4.17.21
     uuid: ^8.3.2
   peerDependencies:
-    "@openmrs/esm-framework": 5.x
+    "@openmrs/esm-framework": 4.x
     react: 18.x
     single-spa: 5.x
+<<<<<<< HEAD
   checksum: 46cd89d788c7c796a2ac69f93b052cc180bf1a14376e4cc3e1785cafd67c5c650079b7b957a0eeda09717eb0b917502042ca671faf2aaee21a8e4412f1570432
+=======
+  checksum: 25e297ba90ef5af1c73b6ca7579b7eb210ed4638fc559a7a0e5bd35a545f1ce65e4eb639d9a764a88946b74203133ba1248e1996b51637787c5597738af017bc
+>>>>>>> c7934c8a6dfe2bc6bff3c4420dad9761e52636e6
   languageName: node
   linkType: hard
 
@@ -6186,6 +6196,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ws@npm:^8.5.5":
+  version: 8.5.6
+  resolution: "@types/ws@npm:8.5.6"
+  dependencies:
+    "@types/node": "*"
+  checksum: 7addb0c5fa4e7713d5209afb8a90f1852b12c02cb537395adf7a05fbaf21205dc5f7c110fd5ad6f3dbf147112cbff33fb11d8633059cb344f0c14f595b1ea1fb
+  languageName: node
+  linkType: hard
+
 "@types/yargs-parser@npm:*":
   version: 21.0.1
   resolution: "@types/yargs-parser@npm:21.0.1"
@@ -6347,7 +6366,7 @@ __metadata:
   dependencies:
     "@carbon/react": ^1.33.1
     "@openmrs/esm-framework": next
-    "@openmrs/esm-patient-common-lib": next
+    "@openmrs/esm-patient-common-lib": 4.x
     "@openmrs/esm-styleguide": next
     "@openmrs/openmrs-form-engine-lib": next
     "@swc/cli": ^0.1.62
@@ -6396,12 +6415,22 @@ __metadata:
     systemjs-webpack-interop: ^2.3.7
     turbo: ^1.10.7
     typescript: ^4.9.5
+<<<<<<< HEAD
     webpack: ^5.85.1
     webpack-cli: ^4.10.0
     yup: ^0.29.1
   peerDependencies:
     "@openmrs/esm-framework": "*"
     "@openmrs/esm-patient-common-lib": "*"
+=======
+    webpack-bundle-analyzer: ^4.4.0
+    webpack-cli: ^4.10.0
+    webpack-dev-server: ^4.8.1
+    yup: ^0.29.1
+  peerDependencies:
+    "@openmrs/esm-framework": "*"
+    "@openmrs/esm-patient-common-lib": 4.x
+>>>>>>> c7934c8a6dfe2bc6bff3c4420dad9761e52636e6
     dayjs: ^1.8.16
     react: ^18.2.0
     react-i18next: ^11.18.6
@@ -9024,10 +9053,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "commander@npm:~11.0.0":
   version: 11.0.0
   resolution: "commander@npm:11.0.0"
   checksum: 6621954e1e1d078b4991c1f5bbd9439ad37aa7768d6ab4842de1dbd4d222c8a27e1b8e62108b3a92988614af45031d5bb2a2aaa92951f4d0c934d1a1ac564bb4
+=======
+"commander@npm:~10.0.0":
+  version: 10.0.1
+  resolution: "commander@npm:10.0.1"
+  checksum: 436901d64a818295803c1996cd856621a74f30b9f9e28a588e726b2b1670665bccd7c1a77007ebf328729f0139838a88a19265858a0fa7a8728c4656796db948
+>>>>>>> c7934c8a6dfe2bc6bff3c4420dad9761e52636e6
   languageName: node
   linkType: hard
 
@@ -21591,6 +21627,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sirv@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "sirv@npm:2.0.3"
+  dependencies:
+    "@polka/url": ^1.0.0-next.20
+    mrmime: ^1.0.0
+    totalist: ^3.0.0
+  checksum: e2dfd4c97735a6ad6d842d0eec2cd9e3919ff0e46f0d228248c5753ad4b70b832711e77e1259c031c439cdb08303cc54d923685c92b0e890145cc733af7c5568
+  languageName: node
+  linkType: hard
+
 "sisteransi@npm:^1.0.5":
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
@@ -22954,6 +23001,13 @@ __metadata:
   version: 2.0.2
   resolution: "toposort@npm:2.0.2"
   checksum: d64c74b570391c9432873f48e231b439ee56bc49f7cb9780b505cfdf5cb832f808d0bae072515d93834dd6bceca5bb34448b5b4b408335e4d4716eaf68195dcb
+  languageName: node
+  linkType: hard
+
+"totalist@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "totalist@npm:3.0.1"
+  checksum: 5132d562cf88ff93fd710770a92f31dbe67cc19b5c6ccae2efc0da327f0954d211bbfd9456389655d726c624f284b4a23112f56d1da931ca7cfabbe1f45e778a
   languageName: node
   linkType: hard
 
@@ -24383,6 +24437,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"webpack-bundle-analyzer@npm:^4.4.0":
+  version: 4.9.1
+  resolution: "webpack-bundle-analyzer@npm:4.9.1"
+  dependencies:
+    "@discoveryjs/json-ext": 0.5.7
+    acorn: ^8.0.4
+    acorn-walk: ^8.0.0
+    commander: ^7.2.0
+    escape-string-regexp: ^4.0.0
+    gzip-size: ^6.0.0
+    is-plain-object: ^5.0.0
+    lodash.debounce: ^4.0.8
+    lodash.escape: ^4.0.1
+    lodash.flatten: ^4.4.0
+    lodash.invokemap: ^4.6.0
+    lodash.pullall: ^4.2.0
+    lodash.uniqby: ^4.7.0
+    opener: ^1.5.2
+    picocolors: ^1.0.0
+    sirv: ^2.0.3
+    ws: ^7.3.1
+  bin:
+    webpack-bundle-analyzer: lib/bin/analyzer.js
+  checksum: 7e891c28d5a903242893e55ecc714fa01d7ad6bedade143235c07091b235915349812fa048968462781d59187507962f38b6c61ed7d25fb836ba0ac0ee919a39
+  languageName: node
+  linkType: hard
+
 "webpack-bundle-analyzer@npm:^4.5.0":
   version: 4.9.1
   resolution: "webpack-bundle-analyzer@npm:4.9.1"
@@ -24459,6 +24540,53 @@ __metadata:
   linkType: hard
 
 "webpack-dev-server@npm:^4.10.1":
+  version: 4.15.1
+  resolution: "webpack-dev-server@npm:4.15.1"
+  dependencies:
+    "@types/bonjour": ^3.5.9
+    "@types/connect-history-api-fallback": ^1.3.5
+    "@types/express": ^4.17.13
+    "@types/serve-index": ^1.9.1
+    "@types/serve-static": ^1.13.10
+    "@types/sockjs": ^0.3.33
+    "@types/ws": ^8.5.5
+    ansi-html-community: ^0.0.8
+    bonjour-service: ^1.0.11
+    chokidar: ^3.5.3
+    colorette: ^2.0.10
+    compression: ^1.7.4
+    connect-history-api-fallback: ^2.0.0
+    default-gateway: ^6.0.3
+    express: ^4.17.3
+    graceful-fs: ^4.2.6
+    html-entities: ^2.3.2
+    http-proxy-middleware: ^2.0.3
+    ipaddr.js: ^2.0.1
+    launch-editor: ^2.6.0
+    open: ^8.0.9
+    p-retry: ^4.5.0
+    rimraf: ^3.0.2
+    schema-utils: ^4.0.0
+    selfsigned: ^2.1.1
+    serve-index: ^1.9.1
+    sockjs: ^0.3.24
+    spdy: ^4.0.2
+    webpack-dev-middleware: ^5.3.1
+    ws: ^8.13.0
+  peerDependencies:
+    webpack: ^4.37.0 || ^5.0.0
+  peerDependenciesMeta:
+    webpack:
+      optional: true
+    webpack-cli:
+      optional: true
+  bin:
+    webpack-dev-server: bin/webpack-dev-server.js
+  checksum: cd0063b068d2b938fd76c412d555374186ac2fa84bbae098265212ed50a5c15d6f03aa12a5a310c544a242943eb58c0bfde4c296d5c36765c182f53799e1bc71
+  languageName: node
+  linkType: hard
+
+"webpack-dev-server@npm:^4.8.1":
   version: 4.15.1
   resolution: "webpack-dev-server@npm:4.15.1"
   dependencies:
@@ -24583,7 +24711,11 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
+<<<<<<< HEAD
   checksum: 79476a782da31a21f6dd38fbbd06b68da93baf6a62f0d08ca99222367f3b8668f5a1f2086b7bb78e23172e31fa6df6fa7ab09b25e827866c4fc4dc2b30443ce2
+=======
+  checksum: 9fd1568b34ec2e99ba97c8509a15ab2576ec80c396e7015551ec814b24cfc11de173acba3e114dafe95f1a6d460781b09d6201e6a1fb15110e1d01a09f61a283
+>>>>>>> c7934c8a6dfe2bc6bff3c4420dad9761e52636e6
   languageName: node
   linkType: hard
 
@@ -25060,9 +25192,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "ws@npm:^8.13.0, ws@npm:^8.2.3":
   version: 8.14.2
   resolution: "ws@npm:8.14.2"
+=======
+"ws@npm:^8.13.0":
+  version: 8.14.2
+  resolution: "ws@npm:8.14.2"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ">=5.0.2"
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 3ca0dad26e8cc6515ff392b622a1467430814c463b3368b0258e33696b1d4bed7510bc7030f7b72838b9fdeb8dbd8839cbf808367d6aae2e1d668ce741d4308b
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.2.3":
+  version: 8.9.0
+  resolution: "ws@npm:8.9.0"
+>>>>>>> c7934c8a6dfe2bc6bff3c4420dad9761e52636e6
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ">=5.0.2"
