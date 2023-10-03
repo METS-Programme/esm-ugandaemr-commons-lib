@@ -284,8 +284,8 @@ export const EncounterList: React.FC<EncounterListProps> = ({
 
   const launchEncounterForm = (
     form?: any,
-    intent: string = "*",
-    action: string = "add",
+    intent = "*",
+    action = "add",
     encounterUuid?: any
   ) => {
     const launcherTitle =
@@ -325,7 +325,7 @@ export const EncounterList: React.FC<EncounterListProps> = ({
     let encounterForms = [];
     if (forms && forms.length > 1) {
       encounterForms = forms.map((formV) => {
-        let tempForm = getForm(formV.package, formV.name);
+        const tempForm = getForm(formV.package, formV.name);
         const excludedIntents = formV.fixedIntent
           ? tempForm.availableIntents
               .filter((candidate) => candidate.intent != formV.fixedIntent)
