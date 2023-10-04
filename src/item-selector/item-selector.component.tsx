@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./item-selector.scss";
-import Panel from "../panel/panel.component";
+import { Panel } from "../panel/panel.component";
 import { ArrowLeft, ArrowRight } from "@carbon/react/icons";
 import { Button } from "@carbon/react";
 
