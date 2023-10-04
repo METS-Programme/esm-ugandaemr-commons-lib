@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./panel.scss";
 
-interface PanelProps {
+export interface PanelProps {
   heading: string;
   children: React.ReactNode;
 }
 
-const Panel: React.FC<PanelProps> = ({ heading, children }) => {
+export const Panel: React.FC<PanelProps> = ({ heading, children }) => {
   return (
     <div className={styles.panel}>
       <div className={styles.heading}>
@@ -16,5 +16,3 @@ const Panel: React.FC<PanelProps> = ({ heading, children }) => {
     </div>
   );
 };
-
-export default Panel;
