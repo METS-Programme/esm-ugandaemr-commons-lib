@@ -1,4 +1,3 @@
-const path = require("path");
 const config = (module.exports = require("openmrs/default-webpack-config"));
 config.scriptRuleConfig.exclude =
     path.sep == "/" ?

@@ -4,7 +4,7 @@ import { EmptyDataIllustration } from "./empty-data-illustration.component";
 import styles from "./empty-state.scss";
 import { Trans, useTranslation } from "react-i18next";
 
-interface EmptyStateProps {
+export interface EmptyStateProps {
   headerTitle: string;
   displayText: string;
   launchForm?: () => void;
