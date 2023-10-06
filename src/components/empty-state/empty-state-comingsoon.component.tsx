@@ -4,7 +4,7 @@ import styles from "./empty-state.scss";
 import { Trans, useTranslation } from "react-i18next";
 import { Button, Tile, Layer } from "@carbon/react";
 
-export interface EmptyStateProps {
+interface EmptyStateProps {
   headerTitle: string;
   displayText?: string;
   launchForm?: () => void;
