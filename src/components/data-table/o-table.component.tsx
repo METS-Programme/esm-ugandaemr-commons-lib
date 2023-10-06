@@ -12,7 +12,7 @@ import {
 import styles from "./o-table.scss";
 import { LazyCell } from "../lazy-cell/lazy-cell.component";
 
-interface TableProps {
+export interface TableProps {
   tableHeaders: any;
   tableRows: any;
 }

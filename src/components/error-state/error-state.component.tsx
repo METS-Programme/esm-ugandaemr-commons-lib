@@ -3,7 +3,7 @@ import { Tile } from "@carbon/react";
 import { useTranslation } from "react-i18next";
 import styles from "./error-state.scss";
 
-interface ErrorStateProps {
+export interface ErrorStateProps {
   error: any;
   headerTitle: string;
 }

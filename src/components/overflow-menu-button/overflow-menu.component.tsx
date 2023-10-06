@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { applyFormIntent } from "@openmrs/openmrs-form-engine-lib";
 import { Button } from "@carbon/react";
 
-interface OverflowMenuProps {
+export interface OverflowMenuProps {
   menuTitle: React.ReactNode;
   overflowItems: Array<any>;
   launchForm?: (formJson?: any, intent?: string) => void;
