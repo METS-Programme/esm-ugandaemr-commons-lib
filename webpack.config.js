@@ -6,14 +6,6 @@ config.scriptRuleConfig.exclude =
     /(node_modules[^\\@openmrs\/esm\-patient\-common\-lib])/;
 // Temporary fix to resolve webpack issues with imports from the commons library
 config.overrides.resolve = {
-    extensions: [".tsx", ".ts", ".jsx", ".js", ".scss"],
-    alias: {
-        "@openmrs/esm-framework": "@openmrs/esm-framework/src/internal",
-        "@ugandaemr/esm-ugandaemr-commons-lib": path.resolve(
-            __dirname,
-            "./src/index"
-        ),
-        "@openmrs/openmrs-form-engine-lib": "@openmrs/openmrs-form-engine-lib/src/index",
-    },
+    extensions: [".tsx", ".ts", ".jsx", ".js", ".scss"]
 };
 module.exports = config;
