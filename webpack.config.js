@@ -14,6 +14,7 @@ config.overrides.resolve = {
             __dirname,
             "./src/index"
         ),
+        "@openmrs/openmrs-form-engine-lib": "@openmrs/openmrs-form-engine-lib/src/index",
     },
 };
 module.exports = config;
