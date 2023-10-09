@@ -6,7 +6,6 @@ import { HomeIllustration } from "./home-illustration.component";
 import styles from "./home-header.scss";
 import { useParentLocation } from "./header.resource";
 
-
 export interface HomeHeaderProps {
   headerTitle: string;
 }
