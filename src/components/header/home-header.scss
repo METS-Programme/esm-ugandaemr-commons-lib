@@ -1,13 +1,14 @@
-@use '@carbon/styles/scss/colors';
 @use '@carbon/styles/scss/type';
 @use '@carbon/styles/scss/spacing';
+@import '~@openmrs/esm-styleguide/src/vars';
 
 .header {
   @include type.type-style('body-compact-02');
-  color: colors.$gray-70;
+  color: $text-02;
   height: spacing.$spacing-12;
-  background-color: colors.$white-0;
-  border-bottom: 1px solid colors.$gray-20;
+  background-color: $ui-02;
+  border: 1px solid $ui-03;
+  border-left: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -16,13 +17,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  cursor: pointer;
 }
 
 .right-justified-items {
   @include type.type-style('body-compact-02');
-  color: colors.$gray-70;
-  margin: 0.5rem;
+  color: $text-02;
+  padding-top: 1rem;
 }
 
 .page-name {
@@ -40,6 +40,14 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 1rem;
+}
+
+.clinic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 2rem;
 }
 
 .value {

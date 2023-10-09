@@ -4,6 +4,7 @@ import { Calendar, Location } from "@carbon/react/icons";
 import { formatDate, useSession } from "@openmrs/esm-framework";
 import { HomeIllustration } from "./home-illustration.component";
 import styles from "./home-header.scss";
+import { useParentLocation } from "./header.resource";
 
 export interface HomeHeaderProps {
   headerTitle: string;
@@ -13,6 +14,9 @@ export const HomeHeader: React.FC<HomeHeaderProps> = ({ headerTitle }) => {
   const { t } = useTranslation();
   const userSession = useSession();
   const userLocation = userSession?.sessionLocation?.display;
+  const { location, isLoading: loading } = useParentLocation(
+    userSession?.sessionLocation?.uuid
+  );
 
   return (
     <>
@@ -33,6 +37,9 @@ export const HomeHeader: React.FC<HomeHeaderProps> = ({ headerTitle }) => {
             <span className={styles.value}>
               {formatDate(new Date(), { mode: "standard" })}
             </span>
+          </div>
+          <div className={styles["clinic"]}>
+            <span>{location?.parentLocation?.display}</span>
           </div>
         </div>
       </div>
