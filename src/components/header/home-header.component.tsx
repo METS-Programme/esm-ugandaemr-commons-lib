@@ -11,7 +11,10 @@ export interface HomeHeaderProps {
   icon: React.ReactNode;
 }
 
-export const HomeHeader: React.FC<HomeHeaderProps> = ({ headerTitle, icon }) => {
+export const HomeHeader: React.FC<HomeHeaderProps> = ({
+  headerTitle,
+  icon,
+}) => {
   const { t } = useTranslation();
   const userSession = useSession();
   const userLocation = userSession?.sessionLocation?.display;
