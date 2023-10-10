@@ -8,9 +8,13 @@ import { useParentLocation } from "./header.resource";
 
 export interface HomeHeaderProps {
   headerTitle: string;
+  icon: React.ReactNode;
 }
 
-export const HomeHeader: React.FC<HomeHeaderProps> = ({ headerTitle }) => {
+export const HomeHeader: React.FC<HomeHeaderProps> = ({
+  headerTitle,
+  icon,
+}) => {
   const { t } = useTranslation();
   const userSession = useSession();
   const userLocation = userSession?.sessionLocation?.display;
@@ -30,7 +34,7 @@ export const HomeHeader: React.FC<HomeHeaderProps> = ({ headerTitle }) => {
         </div>
         <div className={styles["right-justified-items"]}>
           <div className={styles["date-and-location"]}>
-            <Location size={16} />
+            {icon}
             <span className={styles.value}>{userLocation}</span>
             <span className={styles.middot}>&middot;</span>
             <Calendar size={16} />
