@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Calendar, Location } from "@carbon/react/icons";
+import { Calendar, Events, Location } from "@carbon/react/icons";
 import { formatDate, useSession } from "@openmrs/esm-framework";
 import { HomeIllustration } from "./home-illustration.component";
 import styles from "./home-header.scss";
@@ -26,7 +26,7 @@ export const HomeHeader: React.FC<HomeHeaderProps> = ({
     <>
       <div className={styles.header}>
         <div className={styles["left-justified-items"]}>
-          <HomeIllustration />
+          <HomeIllustration icon={<Events />} />
           <div className={styles["page-labels"]}>
             <p>{t("home", "Home")}</p>
             <p className={styles["page-name"]}>{headerTitle}</p>
@@ -34,7 +34,7 @@ export const HomeHeader: React.FC<HomeHeaderProps> = ({
         </div>
         <div className={styles["right-justified-items"]}>
           <div className={styles["date-and-location"]}>
-            {icon}
+            <Location size={16} />
             <span className={styles.value}>{userLocation}</span>
             <span className={styles.middot}>&middot;</span>
             <Calendar size={16} />
