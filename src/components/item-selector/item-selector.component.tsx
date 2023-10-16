@@ -4,6 +4,21 @@ import { Panel } from "../panel/panel.component";
 import { ArrowLeft, ArrowRight } from "@carbon/react/icons";
 import { Button } from "@carbon/react";
 
+type SideNavProps = object;
+
+type Indicator = {
+  id: string;
+  label: string;
+  type?: string;
+  attributes?: Array<IndicatorItem>;
+};
+
+type IndicatorItem = {
+  id: string;
+  label: string;
+  type?: string;
+};
+
 export interface ItemSelectorProps {
   availableParameters: any[];
   selectedParameters: any[];
