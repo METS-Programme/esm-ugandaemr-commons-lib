@@ -26,7 +26,7 @@ export const HomeHeader: React.FC<HomeHeaderProps> = ({
     <>
       <div className={styles.header}>
         <div className={styles["left-justified-items"]}>
-          <HomeIllustration icon={<Events />} />
+          <HomeIllustration icon={icon} />
           <div className={styles["page-labels"]}>
             <p>{t("home", "Home")}</p>
             <p className={styles["page-name"]}>{headerTitle}</p>
