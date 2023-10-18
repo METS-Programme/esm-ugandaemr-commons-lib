@@ -17,6 +17,7 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
+  margin-left: 0.75rem;
 }
 
 .right-justified-items {
@@ -32,6 +33,7 @@
 .page-labels {
   p:first-of-type {
     margin-bottom: 0.25rem;
+    margin-left: 1rem;
   }
 }
 
