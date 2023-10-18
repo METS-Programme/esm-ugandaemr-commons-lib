@@ -9,10 +9,7 @@ config.overrides.resolve = {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".scss"],
     alias: {
         "@openmrs/esm-framework": "@openmrs/esm-framework/src/internal",
-        "@ugandaemr/esm-ugandaemr-commons-lib": path.resolve(
-            __dirname,
-            "./src/index"
-        ),
+        "@ugandaemr/esm-ugandaemr-commons-lib": "@ugandaemr/esm-ugandaemr-commons-lib/src/index",
         "@openmrs/openmrs-form-engine-lib": "@openmrs/openmrs-form-engine-lib/src/index",
     },
 };
