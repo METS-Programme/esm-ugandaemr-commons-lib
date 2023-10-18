@@ -22,7 +22,7 @@
 .right-justified-items {
   @include type.type-style('body-compact-02');
   color: colors.$gray-70;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .page-name {
@@ -40,6 +40,14 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 1rem;
+}
+
+.clinic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 2rem;
 }
 
 .value {
