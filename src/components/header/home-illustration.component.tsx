@@ -6,7 +6,11 @@ export interface HomeIllustrationProps {
 }
 
 export const HomeIllustration: React.FC<HomeIllustrationProps> = ({ icon }) => {
-  return <div className={styles.svgContainer}>{icon}</div>;
+  return (
+    <div className={styles.svgContainer}>
+      <div className={styles.iconOverrides}>{icon}</div>
+    </div>
+  );
 };
 
 export default HomeIllustration;
